@@ -1,0 +1,13 @@
+https://play.google.com/store/music/album/Jessie_Baylin_Dark_Place?id=Bfbx7qintarde4bsu5mwegpy54q&hl=en
+
+<h1>
+Vote on the next song!
+</h1>
+
+<ul>
+	<li ng-repeat="song in songs | orderBy : '-votes'">
+		<span class="upvotes"> {{song.votes}}</span>
+		{{song.title}}
+		<span class="upvote" ng-click="increaseVotes(song)">Cast_Your_Vote</span>
+	</li>
+</ul>

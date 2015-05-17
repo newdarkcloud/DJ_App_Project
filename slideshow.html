@@ -1,5 +1,23 @@
 <img style="max-width: 60%;" src="http://www.topoftheworldlimo.com/wp-content/uploads/2013/08/Wedding-couple.jpg"/>
 
-<form name="uploadImage" action="" method="post">
-<input type="file" name="uploadField"/>
+
+<form id="uploadbanner" enctype="multipart/form-data" method="post" action="#">
+<input id="fileupload" name="myfile" type="file" />
+<input type="submit" value="submit" id="submit" />
 </form>
+<script>
+HTMLstring='<HTML>\n';
+HTMLstring+='<HEAD>\n';
+HTMLstring+='<TITLE>Test Document</TITLE>\n';
+HTMLstring+='<HEAD>\n';
+HTMLstring+='<BODY bgColor ="#FFEBCD">\n';
+HTMLstring+='<p style = "color:'#FFFFFF';">Hello</p>\n';
+HTMLstring+='</BODY>\n';
+HTMLstring+='</HTML>';
+alert(HTMLstring);
+newwindow=window.open();
+newdocument= newwindow.document;
+newdocument.write(HTMLstring);
+newdocument.close();
+
+</script>
